@@ -1,0 +1,65 @@
+/*
+  Name: Hairong Wu (Jason)
+  Date: May 19, 2020
+  Section: CSE 154 AG
+  This is the styles.css file for my CP3 of CSE 154.
+  It includes style support for both of the index.html.
+*/
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-size: cover;
+  background-color: gray;
+  color: white;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+section {
+  height: calc(100vh);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section > div {
+  width: 70%;
+  margin-left: 15%;
+}
+
+h1 {
+  font-size: 50pt;
+}
+
+h2, footer > a {
+  font-size: 24pt;
+}
+
+p, li {
+  text-align: left;
+}
+
+h1, h2 {
+  text-shadow: black 5px 5px 5px;
+}
+
+h3, p {
+  font-size: 18pt;
+}
+
+h4, li {
+  font-size: 16pt;
+}
+
+img {
+  width: 15%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+img.img_right {
+  float: right;
+}
+
+img.img_left {
+  float: left;
+}
