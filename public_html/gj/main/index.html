@@ -13,96 +13,129 @@
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
-    <title>Message Board</title>
+
+    
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
+    <script src="vendors/easings.min.js"></script>
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="fullpage.js"></script>
+
+
+    <title>Welcome to NetBit Game Jam 2020!!!</title>
   </head>
   <body id="rso">
 
-    <section class="title">
-      <h1>NetBit Game Jam 2020</h1>
-      <!-- <div>
-        <img src="img/netbit-uw.jpg" alt="NetBit@UW">
-      </div> -->
-    </section>
-    
-    <section>
-      <h2>
-        What is Game Jam?
-      </h2>
-      <div>
-        <img src="img/netbit-uw.jpg" alt="NetBit@UW" class="img_right">
-        <article>
-          <p>
-            Game Jam is a contest where participants utiliz their skills and knowledges to make a game from scratch with a time constraint.
-          </p>
-          <p>
-            Participants might work independently, or in teams.
-          </p>
-          <p>
-            Participants are generally programmers, game designers, artists, writers, and others in game development-related fields.
-          </p>
-          <p>
-            Traditionally, game jams focus on video games; however, board games have also been the subject of game jams.
-          </p>
-        </article>
+    <div id="fullpage">
+      
+      <div class="section active bg sec1">
+        <h2 class="sec1">Welcome to</h2>
+        <h1 class="sec1">NetBit Game Jam 2020</h1>
+        <h3 class="sec1">(10.16 - 10.28)</h3>
+        <h4 class="sec1">due to COVID-19, NetBit Game Jam 2020 will be held online</h4>
       </div>
-    </section>
+      
+      <div class="section bg sec2" id="bg-blur">
+        <h2>
+          What is Game Jam?
+        </h2>
+        <div class="content"> 
+          <img src="img/icon/gamejamlogo.png" alt="sources from https://davisgamedev.com/2016/05/02/2016-winter-game-jam-57/" class="img_right">
+          <article>
+            <p>
+              Game Jam is a contest where participants utilize their skills and knowledges to make a game from scratch with a time constraint.
+            </p>
+            <p>
+              Participants might work independently, or in teams.
+            </p>
+            <p>
+              Participants are generally programmers, game designers, artists, writers, and others in game development-related fields.
+            </p>
+            <p>
+              Traditionally, game jams focus on video games; however, board games have also been the subject of game jams.
+            </p>
+          </article>
+        </div>
+      </div>
 
-    <section>
-      <h2>
-        What is NetBit @UW?
-      </h2>
-      <div>
-        <img src="img/netbit-uw.jpg" alt="NetBit@UW" class="img_left">
-        <article>
-          <p>
-            NetBit @UW is a team formed since Global Game Jam 2020 with diverse members and ideas to thrive and create in this diverse world.
-            We dedicate to create and develop games that discuss on meaningful topics such as justice, war and peace, and dystopia.
-          </p>
-          <p>
-            We have members:
-          </p>  
-            <li>who have joined game jams for more than five times.</li>
-            <li>who envolves in and even starts various game projects</li>
-            <li>who have plenty of publishing experiences on Steam, TapTap and other platforms</li>
-          <p>
-            In addition, we also hold events, such as game jams and seminars, which will showcase and teach how various game designs can be powerful tools in scholar and educational realm.
-          </p>
-          <p>
-            So far, NetBit @UW, as a team, have organized to join one Global Game Jam, and published a game called "Stalker" on Steam.
-          </p>
-        </article>
+      <div class="section bg sec3" id="bg-blur">
+        <h2>
+          What is NetBit @UW?
+        </h2>
+        <div class="content">
+          <img src="img/netbit-uw.jpg" alt="NetBit@UW" class="img_left">
+          <article>
+            <p>
+              NetBit @UW is a team formed since Global Game Jam 2020 with diverse members and ideas to thrive and create in this diverse world.
+              We dedicate to create and develop games that discuss on meaningful topics such as justice, war and peace, and dystopia.
+            </p>
+            <p>
+              We have members:
+            </p>  
+              <li>who have joined game jams for more than five times.</li>
+              <li>who envolves in and even starts various game projects</li>
+              <li>who have plenty of publishing experiences on Steam, TapTap and other platforms</li>
+            <p>
+              In addition, we also hold events, such as game jams and seminars, which will showcase and teach how various game designs can be powerful tools in scholar and educational realm.
+            </p>
+            <p>
+              So far, NetBit @UW, as a team, have organized to join one Global Game Jam, and published a game called "Stalker" on Steam.
+            </p>
+          </article>
+        </div>
       </div>
-    </section>
 
-    <section>
-      <h2>
-        What is NetBit Game Jam?
-      </h2>
-      <div>
-        <!-- <img src="img/netbit-uw.jpg" alt="NetBit@UW"> -->
-        <article>
-          <p>
-            NBGJ is a game jam held by NetBit @UW, where we focuses to create and develop games that discuss on various topics such as justice, war and peace, and dystopia.
-          </p>
-          <p>
-            Every one are welcomed to participates NBGJ, no matter what position you choose, whether you are a beginner or "veteran".
-          </p>
-    
-          <li>
-            Maybe you want to start a project , but don't know how to produce a game as a Producer;
-          </li>
-          <li>
-            Maybe you just finish your CSE courses and can't find an exciting projects to keep using your passion on coding and interest in games;
-          </li>
-          <li>
-            Maybe you love to build 3D models, maps and characters for games and CGs, and want to utilize your works in real practice;
-          </li>
-          <li>
-            Maybe you are interested in game's art design and can produce exquisite art works for a game demo......
-          </li>
-        </article>
+      <div class="section bg sec4" id="bg-blur">
+        <h2>
+          What is NetBit Game Jam?
+        </h2>
+        <div class="content">
+          <article>
+            <p>
+              NBGJ is a game jam held by NetBit @UW, where we focuses to create and develop games that discuss on various topics such as justice, war and peace, and dystopia.
+            </p>
+      
+            <li>
+              Maybe you want to start a project , but don't know how to produce a game as a Producer;
+            </li>
+            <li>
+              Maybe you just finish your CSE courses and can't find an exciting projects to keep using your passion on coding and interest in games;
+            </li>
+            <li>
+              Maybe you love to build 3D models, maps and characters for games and CGs, and want to utilize your works in real practice;
+            </li>
+            <li>
+              Maybe you are interested in game's art design and can produce exquisite art works for a game demo......
+            </li>
+            <p>
+              It's all okay. Every one is welcomed to participates NBGJ, no matter what position you choose, whether you are a beginner or "veteran".
+            </p>
+            <p>
+              NetBit @UW will provide a brief introduction on how to start, and the steps that allows you to prepare as well as finish the jam with fun.
+            </p>
+            <p>
+              Due to COVID-19, NBGJ will be held online, through Zoom (other platforms will also be supported after future announcement).
+            </p>
+          </article>
+        </div>
       </div>
-    </section>
+
+      <div class="section bg sec5" id="bg-blur">
+        <h2>
+          NBGJ 2020 Schedule
+        </h2>
+        <div class="content">
+          <article>
+            <div class="schedule">
+
+            </div>
+
+          </article>
+        </div>
+      </div>
+
+    </div>
 
     <!-- <h1>New Searches</h1>
     <section id="new-search">
