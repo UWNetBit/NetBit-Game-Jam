@@ -35,25 +35,35 @@ div > div.content {
 }
 
 .sec1{
-  background-image: url(img/bg/ff.jpg);
+  background-image: url(./img/bg/ff.jpg);
 }
 
 .sec2{
   background-position: center;
-  background-image: url(img/bg/uwnb1.jpg);
+  background-image: url(./img/bg/uwnb1.JPG);
 }
 
 .sec3 {
   background-position: center center;
-  background-image: url(img/bg/uwnb2.jpg);
+  background-image: url(./img/bg/uwnb2.JPG);
 }
 
 .sec4 {
   background-position: center center;
-  background-image: url(img/bg/uwnb3.jpg);
+  background-image: url(./img/bg/uwnb3.JPG);
 }
 
-.sec1 > .sec1 {
+.sec5 {
+  background-position: center center;
+  background-image: url(./img/bg/GGJ4.JPG);
+}
+
+.sec6 {
+  background-position: center center;
+  background-image: url(./img/bg/res1.jpg);
+}
+
+.main-title > .sec1 {
   background-image: none;
   height: 5%;
 }
@@ -66,20 +76,20 @@ div > div.content {
   left:0;
   top:0;
   background: inherit;
-  filter: blur(8px);
+  filter: blur(9px);
   z-index: 2;
 }
 
-div > h1, div > h2, .content{
+div, p, h1, h2, h3, h4, li {
   z-index:11;
 }
 
 h1 {
-  font-size: 100pt;
+  font-size: 7em;
 }
 
 h2, footer > a {
-  font-size: 75pt;
+  font-size: 4.6875em;
 }
 
 p, li {
@@ -91,26 +101,26 @@ h1, h2 {
 }
 
 h3, p {
-  font-size: 30pt;
+  font-size: 1.875em;
 }
 
 li {
-  font-size: 28pt;
+  font-size: 1.9em;
 }
 
 h4 {
   font-style: italic;
-  font-size: 22pt;
+  text-decoration: underline;
+  font-size: 1.375em;
 }
 
-p, h3, h4 {
+p, h3, h4, li {
   color: white;
-  text-shadow: -2px 2px 0 #000, 2px 2px 0 #000,2px -2px 0 #000,-2px -2px 0 #000; 
+  text-shadow: 0.1em 0.1em 0.1em black;
 }
 
 li {
-  color: white;
-  text-shadow: -3px 3px 0 #000, 3px 3px 0 #000,3px -3px 0 #000,-3px -3px 0 #000; 
+  font-weight: bold;
 }
 
 img {
@@ -124,4 +134,47 @@ img.img_right {
 
 img.img_left {
   float: left;
+}
+
+.detailed-schedule {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+div.detailed-h2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+
+div.detailed-h2 > h2:first-child {
+  margin: 0%;
+  margin-top: 5%;
+}
+
+div.detailed-h2 > h2:nth-child(2){
+  margin: 0%;
+  margin-top: 2%;
+  margin-bottom: 6%;
+}
+
+.detailed-schedule > li {
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.main-title {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main-title h1 {
+  flex-grow: 1.5;
 }
