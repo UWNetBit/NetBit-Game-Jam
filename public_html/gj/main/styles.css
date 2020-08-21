@@ -30,7 +30,7 @@ div > div.content {
 .bg {
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
   background-position: center;
   z-index:1;
@@ -60,6 +60,7 @@ div > div.content {
 
 .sec6 {
   background-image: url(./img/bg/res1.jpg);
+  /* background-image: url(http://students.washington.edu/uwnb/gj/main/img/bg/res1.jpg); */
 }
 
 .main-title > .sec1 {
@@ -108,12 +109,10 @@ li {
 }
 
 h4 {
-  font-style: italic;
-  text-decoration: underline;
   font-size: 1.375em;
 }
 
-p, h3, h4, li {
+p, h3, h4, li:not(#menu li) {
   color: white;
   text-shadow: 0.1em 0.1em 0.1em black;
 }
@@ -176,4 +175,73 @@ div.detailed-h2 > h2:nth-child(2){
 
 .main-title h1 {
   flex-grow: 1.5;
+}
+/* 
+article.full-schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: gray;
+}
+
+/* mouse over link */
+a:hover {
+  color: #666699;
+}
+
+/* selected link */
+a:active {
+  color: #336699;
+}
+
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+  background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
 }
